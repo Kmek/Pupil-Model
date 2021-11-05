@@ -57,7 +57,7 @@ body {
 /********** Page **********/
 #pageBackground {
     background-color: var(--accent);
-    background-image: url("../media/chickens.png");
+    background-image: url("../media/lines.png");
     background-attachment: fixed;
     width: 100%;
     min-width: calc(var(--minW) + 50px);
