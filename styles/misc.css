@@ -1,0 +1,111 @@
+/*** CSS by Kate Keefe ***/
+
+/********** Extra Components **********/
+
+.shadow { /* Creates a shadow on a div or image */
+	box-shadow: 0 0 25px 2px #000000;
+}
+.caption {
+	width: 100%;
+	margin-top: 0;
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.center { /* Centers a div */
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.outline { /* Adds an outline to a div */
+	padding: 5px 10px;
+	border: 1px solid var(--accent);
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/********** Transitions **********/
+.transition, #page, #page hr, #page h1, #page h2, #page h3, #page img, #page mark, th, td {
+    transition-duration: 2.0s;
+}
+
+/********** For StardewFriendship **********/
+#graphBtn, #showTableBtn, #sendToDesmosBtn, #pointsEquationBtn, #rateEquationBtn, #accelEquationBtn, #viewChangedParamBtn {
+    height: 50px;
+    width: calc(100% - 50px);
+    margin-left: 25px;
+    font-size: 16px;
+    border: 3px solid var(--accent);
+
+    /* Slide left to right on hover */
+    background: linear-gradient(to right, var(--accent) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+#graphBtn:hover, #showTableBtn:hover, #sendToDesmosBtn:hover, #pointsEquationBtn:hover, #rateEquationBtn:hover, #accelEquationBtn:hover, #viewChangedParamBtn:hover {
+    background-position: left bottom;
+}
+#graphBtn {
+    margin-bottom: 10px;
+    border-radius: 0 40px 5px 40px;
+}
+#showTableBtn {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 40px 40px 5px 5px;
+}
+#sendToDesmosBtn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 40px 40px;
+}
+#pointsEquationBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 40px 40px 5px 5px;
+}
+#rateEquationBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#accelEquationBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 40px 40px;
+}
+#viewChangedParamBtn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+}
+
+#pointsDiv {
+    width: 100%;
+    height: 0;  /* or 250px */
+    overflow-y: hidden; /* or scroll */
+    /* border: 1px solid green; */
+    transition-duration: 0.7s;
+}
+#pointsDiv table { /* centers table to look like a burger */
+    width: 650px;
+    margin-left: 25px;
+}
+#pointsDiv table td {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.pi {
+    font-family: 'Times New Roman';
+}
+.pi:before {
+    content: "\03C0";
+}
+
+#calculator {
+    box-shadow: 0 12px 8px -5px rgba(0, 0, 0, 0.438);
+}
